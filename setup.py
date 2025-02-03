@@ -1,22 +1,28 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="ct001",  # 🚀 Change this to a unique, unguessable name
-    version="0.1.0",
-    author="Sumedh Patil",
-    author_email="your-email@example.com",  # Change to your real email
+    name="csmxauth",  # PyPI package name
+    version="0.1.3",  # Increment this version for new updates
     description="Post-Quantum Secure Authentication Library",
-    long_description=open("README.md").read(),
+    long_description=open("README.md", "r", encoding="utf-8").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/yourgithub/ct001",  # Replace with your GitHub repo (if available)
-    packages=find_packages(),
+    author="Sumedh Patil",
+    author_email="admin@aipresso.uk",
+    url="https://github.com/Sumedh1599/csmxauth",  # Change to your actual repo link
+    packages=find_packages(),  # Auto-detects `csmxauth` package
     install_requires=[
-        "cryptography"
+        "cryptography",
     ],
     classifiers=[
-        "Programming Language :: Python :: 3",
+        "Development Status :: 4 - Beta",
+        "Intended Audience :: Developers",
         "License :: OSI Approved :: MIT License",
-        "Operating System :: OS Independent",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Topic :: Security :: Cryptography",
     ],
-    python_requires=">=3.6",
+    python_requires=">=3.7",
 )
